@@ -30,7 +30,7 @@ module Veewee
             env.logger.debug "-------"
             escaped_command=command
             stderr_redirect = options[:stderr]? options[:stderr] : "&1"
-            IO.popen("#{escaped_command}"+ " 2>#{stderr_redirect}") { |p|
+            IO.popen("#{escaped_command}"+ " 2>#{stderr_redirect}", external_encoding: Encoding::UTF_8) { |p|
               p.each_line{ |l|
                 result.stdout+=l
                 ui.info(l,{:new_line => false})  unless options[:mute]
