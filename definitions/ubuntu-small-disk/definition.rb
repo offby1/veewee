@@ -7,7 +7,7 @@ Veewee::Session.declare({
   :os_type_id => 'Ubuntu_64',
   :iso_file => "ubuntu-12.04.2-server-amd64.iso",
   :iso_src => "http://releases.ubuntu.com/12.04/ubuntu-12.04.2-server-amd64.iso",
-  :iso_md5 => 'a8c667e871f48f3a662f3fbf1c3ddb17',
+  :iso_md5 => 'af5f788aee1b32c4b2634734309cc9e9',
   :iso_download_timeout => "1000",
   :boot_wait => "4",
   :boot_cmd_sequence => [
